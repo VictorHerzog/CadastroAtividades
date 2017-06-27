@@ -80,3 +80,5 @@ C:\Users\v.herzog\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\bin\Mi
 C:\Users\v.herzog\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.csprojResolveAssemblyReference.cache
 C:\Users\v.herzog\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.dll
 C:\Users\v.herzog\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.pdb
+C:\Users\v.herzog\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.Migrations.dbinicial.resources
+C:\Users\v.herzog\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.csproj.GenerateResource.Cache

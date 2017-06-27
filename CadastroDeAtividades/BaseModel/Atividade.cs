@@ -21,11 +21,9 @@ namespace BaseModel
         [Required]
         public bool Ativo { get; set; }
 
-        [Required]
-        [ForeignKey]
         public int PessoaID { get; set; }
 
-        public string Nome { get; set; }
+        public Pessoa _Pessoa { get; set; }
 
     }
 }
