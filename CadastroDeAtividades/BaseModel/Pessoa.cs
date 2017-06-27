@@ -9,6 +9,7 @@ namespace BaseModel
 {
     class Pessoa
     {
+        [Key]
         public int PessoaID { get; set; }
         [Required]
         public string Nome { get; set; }
