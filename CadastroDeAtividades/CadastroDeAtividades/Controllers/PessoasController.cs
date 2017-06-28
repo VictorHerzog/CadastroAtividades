@@ -1,89 +1,44 @@
-﻿using System;
+﻿using CadastroDeAtividades.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using BaseModel;
 using System.Web.Mvc;
 
 namespace CadastroDeAtividades.Controllers
 {
     public class PessoasController : Controller
     {
-        // GET: Pessoas
+        private ApplicationDbContext db = new ApplicationDbContext();
+
+        // GET: Categorias (LISTAGEM)
         public ActionResult Index()
         {
-            return View();
+            var Pessoa = db.Pessoas.ToList();
+
+            return View(Pessoa);
         }
 
-        // GET: Pessoas/Details/5
-        public ActionResult Details(int id)
-        {
-            return View();
-        }
 
-        // GET: Pessoas/Create
         public ActionResult Create()
         {
             return View();
         }
 
-        // POST: Pessoas/Create
         [HttpPost]
-        public ActionResult Create(FormCollection collection)
+        public ActionResult Create(Pessoa pessoa)
         {
-            try
+            if (ModelState.IsValid)
             {
-                // TODO: Add insert logic here
 
-                return RedirectToAction("Index");
+                db.Pessoas.Add(pessoa);
+                db.SaveChanges();
+                RedirectToAction("Index");
             }
-            catch
-            {
-                return View();
-            }
-        }
 
-        // GET: Pessoas/Edit/5
-        public ActionResult Edit(int id)
-        {
-            return View();
-        }
+            return View(pessoa);
 
-        // POST: Pessoas/Edit/5
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        // GET: Pessoas/Delete/5
-        public ActionResult Delete(int id)
-        {
-            return View();
-        }
-
-        // POST: Pessoas/Delete/5
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add delete logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
         }
     }
 }

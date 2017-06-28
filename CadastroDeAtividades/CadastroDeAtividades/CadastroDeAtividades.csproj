@@ -196,15 +196,16 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AtividadesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PessoasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706271506356_dbinicial.cs" />
-    <Compile Include="Migrations\201706271506356_dbinicial.Designer.cs">
-      <DependentUpon>201706271506356_dbinicial.cs</DependentUpon>
+    <Compile Include="Migrations\201706280111419_BancoCertoAgoraVai.cs" />
+    <Compile Include="Migrations\201706280111419_BancoCertoAgoraVai.Designer.cs">
+      <DependentUpon>201706280111419_BancoCertoAgoraVai.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -271,6 +272,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Atividades\Create.cshtml" />
+    <Content Include="Views\Atividades\Delete.cshtml" />
+    <Content Include="Views\Atividades\Details.cshtml" />
+    <Content Include="Views\Atividades\Edit.cshtml" />
+    <Content Include="Views\Atividades\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -285,8 +291,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706271506356_dbinicial.resx">
-      <DependentUpon>201706271506356_dbinicial.cs</DependentUpon>
+    <ProjectReference Include="..\BaseModel\BaseModel.csproj">
+      <Project>{8c6ee428-8a1c-4af3-b13f-b1ff388a8474}</Project>
+      <Name>BaseModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201706280111419_BancoCertoAgoraVai.resx">
+      <DependentUpon>201706280111419_BancoCertoAgoraVai.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

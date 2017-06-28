@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BaseModel
 {
-    class Atividade
+    public class Atividade
     {
         [Key]
         public int AtividadeID { get; set; }
@@ -21,8 +21,8 @@ namespace BaseModel
         [Required]
         public bool Ativo { get; set; }
 
-        public int PessoaID { get; set; }
-
+        //public int PessoaID { get; set; }
+        
         public Pessoa _Pessoa { get; set; }
 
     }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BaseModel
 {
-    class Pessoa
+     public class Pessoa
     {
         [Key]
         public int PessoaID { get; set; }
