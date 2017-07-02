@@ -166,5 +166,5 @@ C:\Users\victo\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\bin\Micro
 C:\Users\victo\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.csprojResolveAssemblyReference.cache
 C:\Users\victo\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.dll
 C:\Users\victo\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.pdb
-C:\Users\victo\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.Migrations.BancoCertoAgoraVai.resources
+C:\Users\victo\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.Migrations.Banco.resources
 C:\Users\victo\Desktop\Final\CadastroDeAtividades\CadastroDeAtividades\obj\Debug\CadastroDeAtividades.csproj.GenerateResource.Cache

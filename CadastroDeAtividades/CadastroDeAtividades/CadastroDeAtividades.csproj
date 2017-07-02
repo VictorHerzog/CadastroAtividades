@@ -196,16 +196,15 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
-    <Compile Include="Controllers\AtividadesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PessoasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201706280111419_BancoCertoAgoraVai.cs" />
-    <Compile Include="Migrations\201706280111419_BancoCertoAgoraVai.Designer.cs">
-      <DependentUpon>201706280111419_BancoCertoAgoraVai.cs</DependentUpon>
+    <Compile Include="Migrations\201706292259290_Banco.cs" />
+    <Compile Include="Migrations\201706292259290_Banco.Designer.cs">
+      <DependentUpon>201706292259290_Banco.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -272,15 +271,15 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Atividades\Create.cshtml" />
-    <Content Include="Views\Atividades\Delete.cshtml" />
-    <Content Include="Views\Atividades\Details.cshtml" />
-    <Content Include="Views\Atividades\Edit.cshtml" />
-    <Content Include="Views\Atividades\Index.cshtml" />
+    <Content Include="Views\Pessoas\Create.cshtml" />
+    <Content Include="Views\Pessoas\Delete.cshtml" />
+    <Content Include="Views\Pessoas\Details.cshtml" />
+    <Content Include="Views\Pessoas\Edit.cshtml" />
+    <Content Include="Views\Pessoas\Index.cshtml" />
+    <Content Include="Views\Pessoas\Lixeira.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Pessoas\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -297,8 +296,8 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201706280111419_BancoCertoAgoraVai.resx">
-      <DependentUpon>201706280111419_BancoCertoAgoraVai.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201706292259290_Banco.resx">
+      <DependentUpon>201706292259290_Banco.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,0 +1,49 @@
+﻿@model IEnumerable<BaseModel.Pessoa>
+
+@{
+    ViewBag.Title = "Lixeira";
+}
+
+<h2>Lixeira</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Parentesco)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Ativo)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    //if (item.Ativo==false)
+    //{
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Nome)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Parentesco)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ativo)
+            </td>
+            <td>
+                @Html.ActionLink("Recuperar", "Recuperar", new { id = item.PessoaID }) |
+           
+            </td>
+        </tr>
+   // }
+}
+  
+      @Html.ActionLink("Retornar a lista de Pessoas", "Index")
+
+    
+
+</table>

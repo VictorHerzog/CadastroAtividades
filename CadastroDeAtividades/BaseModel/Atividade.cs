@@ -21,9 +21,16 @@ namespace BaseModel
         [Required]
         public bool Ativo { get; set; }
 
-        //public int PessoaID { get; set; }
+        [ForeignKey("_Comodo")]
+        public int ComodoID { get; set; }
+
+        public Comodo _Comodo { get; set; }
+
+        [ForeignKey("_Pessoa")]
+        public int PessoaID { get; set; }
         
         public Pessoa _Pessoa { get; set; }
+
 
     }
 }
