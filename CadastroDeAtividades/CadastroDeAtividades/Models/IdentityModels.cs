@@ -33,6 +33,7 @@ namespace CadastroDeAtividades.Models
 
         public DbSet<Atividade> Atividades { get; set; }
 
+        public DbSet<Comodo> Comodos { get; set; }
 
         public System.Data.Entity.DbSet<BaseModel.Pessoa> Pessoas { get; set; }
     }

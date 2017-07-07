@@ -3,3 +3,4 @@ C:\Users\victo\Desktop\Final\CadastroDeAtividades\BaseModel\bin\Debug\BaseModel.
 C:\Users\victo\Desktop\Final\CadastroDeAtividades\BaseModel\bin\Debug\BaseModel.pdb
 C:\Users\victo\Desktop\Final\CadastroDeAtividades\BaseModel\obj\Debug\BaseModel.dll
 C:\Users\victo\Desktop\Final\CadastroDeAtividades\BaseModel\obj\Debug\BaseModel.pdb
+C:\Users\victo\Desktop\Final\CadastroDeAtividades\BaseModel\obj\Debug\BaseModel.csprojResolveAssemblyReference.cache

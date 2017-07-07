@@ -52,13 +52,31 @@ namespace CadastroDeAtividades.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Pessoas.Add(pessoa);
-                db.SaveChanges();
-                return RedirectToAction("Index");
+                if (Validacao(pessoa) == null)
+                {
+                    pessoa.Ativo = true;
+                    db.Pessoas.Add(pessoa);
+                    db.SaveChanges();
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    ModelState.AddModelError("", "Já existe uma pessoa cadastrada com esse nome");
+                }
+                
             }
 
             return View(pessoa);
         }
+
+        public Pessoa Validacao(Pessoa pessoas)
+        {
+
+            return db.Pessoas.FirstOrDefault(x => x.Nome.Equals(pessoas.Nome));
+        }
+
+
+
 
         // GET: Pessoas/Edit/5
         public ActionResult Edit(int? id)

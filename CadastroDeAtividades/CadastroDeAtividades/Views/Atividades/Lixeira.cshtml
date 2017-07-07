@@ -1,0 +1,50 @@
+﻿@model IEnumerable<BaseModel.Atividade>
+
+@{
+    ViewBag.Title = "Lixeira";
+}
+
+<h2>Lixeira</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model._Comodo.NomeComodo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model._Pessoa.Nome)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NomeAtividade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DescricaoAtividade)
+        </th>
+
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item._Comodo.NomeComodo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item._Pessoa.Nome)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NomeAtividade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DescricaoAtividade)
+        </td>
+
+        <td>
+            @Html.ActionLink("Recuperar", "Recuperar", new { id = item.ComodoID })
+           
+        </td>
+    </tr>
+}
+
+</table>

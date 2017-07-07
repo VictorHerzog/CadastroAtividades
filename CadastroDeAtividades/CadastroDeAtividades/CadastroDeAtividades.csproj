@@ -196,6 +196,8 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AtividadesController.cs" />
+    <Compile Include="Controllers\ComodoController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Controllers\PessoasController.cs" />
@@ -277,6 +279,18 @@
     <Content Include="Views\Pessoas\Edit.cshtml" />
     <Content Include="Views\Pessoas\Index.cshtml" />
     <Content Include="Views\Pessoas\Lixeira.cshtml" />
+    <Content Include="Views\Comodo\Index.cshtml" />
+    <Content Include="Views\Comodo\Create.cshtml" />
+    <Content Include="Views\Comodo\Delete.cshtml" />
+    <Content Include="Views\Comodo\Details.cshtml" />
+    <Content Include="Views\Comodo\Edit.cshtml" />
+    <Content Include="Views\Comodo\Lixeira.cshtml" />
+    <Content Include="Views\Atividades\Create.cshtml" />
+    <Content Include="Views\Atividades\Delete.cshtml" />
+    <Content Include="Views\Atividades\Details.cshtml" />
+    <Content Include="Views\Atividades\Edit.cshtml" />
+    <Content Include="Views\Atividades\Index.cshtml" />
+    <Content Include="Views\Atividades\Lixeira.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
